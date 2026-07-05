@@ -1,0 +1,486 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/QualificationPlan/v3.3/schemas/OSP_Qualification_Plan_Schema.json",
+  "Projects": [
+    {
+      "Id": "Alprazolam",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Alprazolam-Model/v2.0/Alprazolam-Model.json"
+    },
+    {
+      "Id": "Cimetidine",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Cimetidine-Model/v2.0/Cimetidine-Model.json"
+    },
+    {
+      "Id": "Cimetidine-Alprazolam-DDI",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Cimetidine-Alprazolam-DDI/v1.2/Cimetidine-Alprazolam-DDI.json",
+      "BuildingBlocks": [
+        {
+          "Type": "Compound",
+          "Name": "Alprazolam",
+          "Project": "Alprazolam"
+        },
+        {
+          "Type": "Formulation",
+          "Name": "Xanax_IR",
+          "Project": "Alprazolam"
+        },
+        {
+          "Type": "Compound",
+          "Name": "Cimetidine",
+          "Project": "Cimetidine"
+        },
+        {
+          "Type": "Formulation",
+          "Name": "Tablet",
+          "Project": "Cimetidine"
+        }
+      ],
+      "SimulationParameters": [
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Alprazolam|P (interstitial->intracellular)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Alprazolam|P (interstitial->intracellular)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Alprazolam|P (interstitial->intracellular)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Alprazolam|P (interstitial->intracellular)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Alprazolam|P (interstitial->intracellular)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Alprazolam|P (interstitial->intracellular)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Alprazolam|P (interstitial->intracellular)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Alprazolam|P (interstitial->intracellular)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Alprazolam|P (interstitial->intracellular)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Alprazolam|P (interstitial->intracellular)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Alprazolam|P (interstitial->intracellular)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|Duodenum_int_Duodenum_cell|Alprazolam|P (intracellular->interstitial)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|UpperJejunum_int_UpperJejunum_cell|Alprazolam|P (intracellular->interstitial)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|LowerJejunum_int_LowerJejunum_cell|Alprazolam|P (intracellular->interstitial)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|UpperIleum_int_UpperIleum_cell|Alprazolam|P (intracellular->interstitial)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|LowerIleum_int_LowerIleum_cell|Alprazolam|P (intracellular->interstitial)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|Caecum_int_Caecum_cell|Alprazolam|P (intracellular->interstitial)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|ColonAscendens_int_ColonAscendens_cell|Alprazolam|P (intracellular->interstitial)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|ColonTransversum_int_ColonTransversum_cell|Alprazolam|P (intracellular->interstitial)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|ColonDescendens_int_ColonDescendens_cell|Alprazolam|P (intracellular->interstitial)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|ColonSigmoid_int_ColonSigmoid_cell|Alprazolam|P (intracellular->interstitial)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        },
+        {
+          "Project": "Alprazolam",
+          "Simulation": "PO_0.5mg",
+          "Path": "Neighborhoods|Rectum_int_Rectum_cell|Alprazolam|P (intracellular->interstitial)",
+          "TargetSimulations": [
+            "Abernethy 1983 - Alprazolam 1 mg control",
+            "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+            "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+            "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID"
+          ]
+        }
+      ]
+    }
+  ],
+  "ObservedDataSets": [
+    {
+      "Id": "DDI Ratios",
+      "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.9/DDI.csv",
+      "Type": "DDIRatio"
+    }
+  ],
+  "Plots": {
+    "AxesSettings": {
+      "GOFMergedPlotsPredictedVsObserved": [
+        {
+          "Type": "X",
+          "Dimension": "Concentration (mass)",
+          "Unit": "ng/ml",
+          "GridLines": false,
+          "Scaling": "Log"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Concentration (mass)",
+          "Unit": "ng/ml",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ],
+      "GOFMergedPlotsResidualsOverTime": [
+        {
+          "Type": "X",
+          "Dimension": "Time",
+          "Unit": "h",
+          "GridLines": false,
+          "Scaling": "Linear"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Linear"
+        }
+      ],
+      "ComparisonTimeProfile": [
+        {
+          "Type": "X",
+          "Dimension": "Time",
+          "Unit": "h",
+          "GridLines": false,
+          "Scaling": "Linear"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Concentration (mass)",
+          "Unit": "ng/ml",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ],
+      "DDIRatioPlotsPredictedVsObserved": [
+        {
+          "Type": "X",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Log"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ],
+      "DDIRatioPlotsResidualsVsObserved": [
+        {
+          "Type": "X",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Log"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ],
+      "PKRatioPlots": [
+        {
+          "Type": "X",
+          "Dimension": "Age",
+          "Unit": "year(s)",
+          "GridLines": false,
+          "Scaling": "Linear"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ]
+    },
+    "PlotSettings": {
+      "ChartWidth": 500,
+      "ChartHeight": 400,
+      "Fonts": {
+        "AxisSize": 11,
+        "LegendSize": 9,
+        "OriginSize": 9,
+        "FontFamilyName": "Arial",
+        "WatermarkSize": 40
+      }
+    },
+    "AllPlots": [],
+    "GOFMergedPlots": [],
+    "ComparisonTimeProfilePlots": [],
+    "DDIRatioPlots": [
+      {
+        "SectionReference": "qualification-cyp3a4-ddi",
+        "Title": "CYP3A4 DDI",
+        "PKParameters": [
+          "AUC",
+          "CMAX"
+        ],
+        "PlotTypes": [
+          "predictedVsObserved",
+          "residualsVsObserved"
+        ],
+        "Artifacts": [
+          "Plot",
+          "GMFE",
+          "Measure",
+          "Table"
+        ],
+        "Subunits": [
+          "Mechanism",
+          "Perpetrator",
+          "Victim"
+        ],
+        "Groups": [
+          {
+            "Caption": "Cimetidine + Alprazolam (po)",
+            "Color": "#0000FF",
+            "Symbol": "Circle",
+            "DDIRatios": [
+              {
+                "Output": "Organism|PeripheralVenousBlood|Alprazolam|Plasma (Peripheral Venous Blood)",
+                "ObservedData": "DDI Ratios",
+                "ObservedDataRecordId": 1332,
+                "SimulationControl": {
+                  "Project": "Cimetidine-Alprazolam-DDI",
+                  "Simulation": "Abernethy 1983 - Alprazolam 1 mg control",
+                  "StartTime": 0,
+                  "TimeUnit": "h"
+                },
+                "SimulationDDI": {
+                  "Project": "Cimetidine-Alprazolam-DDI",
+                  "Simulation": "Abernethy 1983 - Alprazolam 1 mg + 300 mg cimetidine QID",
+                  "StartTime": 12,
+                  "TimeUnit": "h"
+                }
+              },
+              {
+                "Output": "Organism|PeripheralVenousBlood|Alprazolam|Plasma (Peripheral Venous Blood)",
+                "ObservedData": "DDI Ratios",
+                "ObservedDataRecordId": 1340,
+                "SimulationControl": {
+                  "Project": "Cimetidine-Alprazolam-DDI",
+                  "Simulation": "Pourbaix 1985 - Alprazolam 0.5 mg TID control",
+                  "StartTime": 168,
+                  "EndTime": 240,
+                  "TimeUnit": "h"
+                },
+                "SimulationDDI": {
+                  "Project": "Cimetidine-Alprazolam-DDI",
+                  "Simulation": "Pourbaix 1985 - alprazolam 0.5 mg TID + cimetidine 200/400 mg QID",
+                  "StartTime": 336,
+                  "EndTime": 408,
+                  "TimeUnit": "h"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Inputs": [],
+  "Sections": [
+    {
+      "Reference": "qualification-cyp3a4-ddi",
+      "Title": "IntrodQualificationuction"
+    }
+  ],
+  "Intro": [
+    {
+      "Path": "Content/titlepage.md"
+    }
+  ]
+}
